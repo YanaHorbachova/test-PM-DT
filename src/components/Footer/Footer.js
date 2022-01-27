@@ -1,10 +1,6 @@
-import { Mobile, Desktop  } from '../../utils/mediaQuery'
-import {ReactComponent as Twitter} from '../../icon/twitter.svg'
-import {ReactComponent as Linkedin} from '../../icon/linkedin.svg'
-import {ReactComponent as Facebook} from '../../icon/facebook.svg'
-import {ReactComponent as Instagram} from '../../icon/instagram.svg'
-import {ReactComponent as Youtube} from '../../icon/youtube.svg'
-import {ReactComponent as Whatsapp} from '../../icon/whatsapp.svg'
+import { Mobile, Desktop } from '../../utils/mediaQuery';
+import SocialList from '../SocialList/SocialList';
+
 import s from './Footer.module.css'
 
 
@@ -27,26 +23,8 @@ const Footer = () => {
                         <li>Контакты</li>
                     </ul>
                 </div>
-                <div className={s.SocialList}>
-                    <ul className={s.SocialList}>
-                        <li className={s.SocialItem}><a href=" "><Twitter/></a></li>
-                        <li className={s.SocialItem}><a href=" "><Linkedin/></a></li>
-                        <li className={s.SocialItem}><a href=" "><Facebook/></a></li>
-                        <li className={s.SocialItem}><a href=" "><Instagram/></a></li>
-                        <li className={s.SocialItem}><a href=" "><Youtube/></a></li>
-                        <li className={s.SocialItem}><a href=" "><Whatsapp/></a></li>
-                    </ul>
-                </div>
+                <SocialList/>
             </div>   
-            <Desktop>        
-                <div className={s.FooterOther}>
-                    <ul>
-                        <li className={s.text}>Privacy Policy</li>
-                        <li className={s.text}>© 2021 All rights reserved</li>
-                        <li className={s.text}>Terms of Use</li>
-                    </ul>
-                </div>
-            </Desktop> 
             <Mobile>
                 <div className={s.FooterOther}>
                     <ul>
@@ -56,8 +34,15 @@ const Footer = () => {
                     </ul>
                 </div>
             </Mobile>
-            
-
+            <Desktop>        
+                <div className={s.FooterOther}>
+                    <ul>
+                        <li className={s.text}>Privacy Policy</li>
+                        <li className={s.text}>© 2021 All rights reserved</li>
+                        <li className={s.text}>Terms of Use</li>
+                    </ul>
+                </div>
+            </Desktop> 
         </div>
 )};
 

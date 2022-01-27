@@ -1,0 +1,9 @@
+.SocialList{
+
+}
+.SocialItem {    
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    cursor: pointer;
+}
