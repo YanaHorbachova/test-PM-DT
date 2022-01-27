@@ -6,6 +6,6 @@ export const Mobile = ({ children }) => {
 };
 
 export const Desktop = ({ children }) => {
-    const isDesktop = useMediaQuery({ minWidth: 1440 })
+    const isDesktop = useMediaQuery({ minWidth: 768 })
     return isDesktop ? children : null
 };
