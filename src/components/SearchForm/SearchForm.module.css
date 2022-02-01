@@ -1,22 +1,85 @@
-.SearchForm{
-
+.SearchForm{   
+    padding-top: 28px;
+    padding-bottom: 20px;
 }
 
-.form{
-
+.form{    
+    text-align: center;
 }
 
-.form-label{
-
+.FormLabel{
+    position: relative;
 }
 
 .input{
-
+    width: 335px;
+    height: 48px;        
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
-.form-icon{
+
+input::placeholder {
+    padding-left: 44px;
+    font-size: 16px;
+    line-height: 1.37;
+    color:#ffffff;
+}
+
+.icon{
+    position: absolute;
+    top: 12.5%;
+    left: 18px;
+    height: 17px;
+}
+
+.button{
+    width: 335px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 16px;
+    background: #FFF9E4;
+    border: none;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .SearchForm{
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .input{
+        width: 205px;
+        height: 48px;       
+        background: rgba(255, 255, 255, 0.15);
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 0;
+        margin-right: 8px;
+    }
+
+    .InputPosition{
+        width: 410px;
+        height: 48px;
+        background: rgba(255, 255, 255, 0.15);
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 0;
+        margin-right: 8px;
+    }
     
-}
+    input::placeholder {
+        padding-left: 44px;
+        font-size: 16px;
+        line-height: 1.37;
+        color:#ffffff;
+    }
 
-.form-button{
+    .button{
+        width: 199px;
+        height: 48px;
+    }
 
 }

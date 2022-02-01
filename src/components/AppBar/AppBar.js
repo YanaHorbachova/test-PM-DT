@@ -4,45 +4,48 @@ import LanguageBar from '../LanguageBar';
 import {ReactComponent as Arrow} from '../../icon/arrow-to-down.svg'
 import {ReactComponent as User} from '../../icon/user.svg'
 
-import s from './NavBar.module.css'
+import s from './AppBar.module.css'
 
-const NavBar = () => {
+const AppBar = () => {
     return (
-        <div className={s.Header}>
+        <div  className={s.AppBar}>
         <Mobile>
-            <div>
+            <div className={s.TopPanel}>
                 <LanguageBar/>
-                <p> Соискателю 
-                    <span><Arrow/></span>
+                <p className={s.text}> Соискателю 
+                    <span className={s.arrow}><Arrow/></span>
                 </p>                    
             </div>
             <div>
                 <p className={s.user}>
-                    <span><User/></span> 
+                    <span className={s.icon}><User/></span> 
                     Юра Марченко
                 </p> 
             </div>
         </Mobile>
 
         <Desktop>
-            <div className={s.NavList}>
-                <ul>
+            <div className={s.TopPanel}>
+                <ul className={s.ListLink}>
                     <li className={s.item}> 
                         <a href=" " className={s.link}>Соискатель</a>
                     </li>
                     <li className={s.item}> 
-                        <a href=" " className={s.link}>Работодатель</a>
+                        <a href=" " className={s.current}>Работодатель</a>
                     </li>
                     <li className={s.item}> 
                         <a href=" " className={s.link}>HR</a>
                     </li>
                 </ul>
+
+                <div className={s.UserPanel}>
+                    <LanguageBar/>
+                    <a href=" " className={s.LinkAuthorization}>Войти</a>
+                </div>
             </div>
-            <LanguageBar/>
-            <a href=" " className={s.LinkAuthorization}>Войти</a>
         </Desktop>      
     </div>
 
     )};
 
-export default NavBar;
+export default AppBar;

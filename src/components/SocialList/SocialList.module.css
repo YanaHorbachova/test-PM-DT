@@ -1,9 +1,35 @@
 .SocialList{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;    
+    margin-bottom: 108px;
+    width: 256px;
+    height: 56px;
 
 }
-.SocialItem {    
+.SocialItem {
+    margin-left: 16px;    
     width: 24px;
     height: 24px;
     align-items: center;
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .SocialList{
+        display: flex;
+        align-items: center;        
+        margin-bottom: 0;
+        width: 256px;
+        height: 56px;    
+    }
+    
+    .SocialItem {
+        margin-left: 16px;    
+        width: 24px;
+        height: 24px;
+        align-items: center;
+        cursor: pointer;
+    }
+
 }

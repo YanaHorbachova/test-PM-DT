@@ -1,0 +1,78 @@
+.AppBar{
+    padding: 5px 26px;
+} 
+
+.TopPanel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 24px;
+    margin-bottom: 10px;
+}
+
+.text{
+    font-size: 13px;
+    line-height: 1.84;   
+}
+
+.arrow{
+    margin-left: 10px;
+    height: 6px;
+}
+
+.user{
+    margin: 0;
+    text-align: center;
+}
+
+.icon{
+    padding-right: 11px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .AppBar{
+        padding: 12.5px 33px;
+    }
+
+    .ListLink{
+        display: flex;
+    }
+ 
+    .item{
+        display:inline;
+        padding: 0 15px;
+        font-size: 16px;
+        border-left: 1px solid #ffffff;        
+    }
+
+    .item:first-child {
+        border:none;    
+    }
+
+    .link{
+        color:#EAEAEA;
+        text-decoration: none;        
+    }
+
+    .current{
+        font-weight: 600;
+        color:#ffffff;
+        text-decoration: none; 
+    }
+
+    .UserPanel{
+        display: flex;
+        align-items: center;
+    }
+
+    .LinkAuthorization{
+        padding-left: 25px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.21;
+        color: #FFFFFF;
+
+    }
+}

@@ -1,5 +1,14 @@
 .Header{
     background-image: url(../../image/background.jpg);
     color: #FFFFFF;
+    max-width: 1440px;
+    height: 230px;
+}
+
+@media screen and (max-width: 767px) {
+    .Header{
+        min-width: 375px;
+        height: 280px;
+    }
 }
 
