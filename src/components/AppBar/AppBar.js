@@ -1,5 +1,5 @@
 import { Mobile, Desktop } from '../../utils/mediaQuery';
-import LanguageBar from '../LanguageBar';
+import UserMenu from '../UserMenu';
 
 import {ReactComponent as Arrow} from '../../icon/arrow-to-down.svg'
 import {ReactComponent as User} from '../../icon/user.svg'
@@ -11,7 +11,7 @@ const AppBar = () => {
         <div  className={s.AppBar}>
         <Mobile>
             <div className={s.TopPanel}>
-                <LanguageBar/>
+                <UserMenu/>
                 <p className={s.text}> Соискателю 
                     <span className={s.arrow}><Arrow/></span>
                 </p>                    
@@ -39,7 +39,7 @@ const AppBar = () => {
                 </ul>
 
                 <div className={s.UserPanel}>
-                    <LanguageBar/>
+                    <UserMenu/>
                     <a href=" " className={s.LinkAuthorization}>Войти</a>
                 </div>
             </div>
