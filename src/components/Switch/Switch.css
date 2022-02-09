@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 252px;
 }
 .title{
     margin: 0;
@@ -60,7 +61,6 @@
     border-radius: 12px;
     transition: all 0.3s ease-in 0s;
 }
-
 .checkbox:checked + .label .inner {
     margin-left: 0;
     left: 1px;
@@ -69,3 +69,10 @@
     right: 1px;
     background: #000046;
 }
+
+@media screen and (min-width: 768px) {
+    .container {
+        min-width: 268px;
+    }
+  
+  }

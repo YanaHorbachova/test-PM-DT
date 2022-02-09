@@ -1,0 +1,46 @@
+.rc-slider-step,
+.rc-slider-rail,
+.rc-slider-track,
+.rc-slider-track-1 {
+    height: 1px;
+}
+
+.rc-slider-track,
+.rc-slider-track-1{
+    background-color: #000046;
+}
+
+.rc-slider-handle-1{ 
+    margin-top: -7px;   
+    width: 15px;
+    height: 15px; 
+    background: #000046;
+    border :none;
+}
+
+.rc-slider-handle-2 {
+    margin-top: -11px;
+    width: 23px;
+    height: 23px; 
+    background: #FFF9E4;
+    border: 4px solid #000046;
+}
+
+.rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging {
+    border-color: #000046;
+    box-shadow: none;
+  }
+  .rc-slider-handle:focus {
+    outline: none;
+  }
+  .rc-slider-handle-click-focused:focus {
+    border-color: #000046;
+    box-shadow: none;
+  }
+  .rc-slider-handle:hover {
+    border-color: #000046;
+  }
+  .rc-slider-handle:active {
+    border-color: #000046;
+    box-shadow: none;
+  }

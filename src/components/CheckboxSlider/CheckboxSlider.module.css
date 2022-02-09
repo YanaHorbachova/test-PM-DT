@@ -1,0 +1,50 @@
+.CheckboxSlider{
+    padding: 14px;
+}
+
+.title {
+    padding-bottom: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #202020;
+    border-bottom: 0.5px solid #EAEAEA;
+}
+
+.range{
+    padding: 16px 0;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    padding-right: 24px;  
+  }
+  
+  .label{
+    font-weight: 300;
+    font-size: 16px;
+    color: #202020;
+  }
+  
+  .input{
+    display: inline-block;
+    text-align: center;
+    width: 86px;
+    height: 40px;  
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #EAEAEA;
+  }
+
+  @media screen and (min-width: 768px) {
+    .form{
+        padding-right: 0;  
+      }
+
+
+    .input{
+        width: 106px;
+      }  
+  }
