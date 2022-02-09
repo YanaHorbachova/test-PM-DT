@@ -1,0 +1,19 @@
+.FilterBar{
+
+}
+
+/* .FilterBar:not(:last-child) {
+    margin-bottom: 15px;
+  } */
+
+.title{
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #202020;
+}
+
+@media screen and (min-width: 768px) {
+
+}
