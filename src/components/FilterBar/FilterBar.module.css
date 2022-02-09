@@ -21,6 +21,18 @@
   padding: 16px 18px;
 }
 
+.box{
+  padding: 14px;
+}
+
+.title {
+  padding-bottom: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #202020;
+  border-bottom: 0.5px solid #EAEAEA;
+}
+
 
 @media screen and (min-width: 768px) {
   .FilterBar {

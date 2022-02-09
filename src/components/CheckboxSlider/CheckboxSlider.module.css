@@ -1,19 +1,6 @@
-.CheckboxSlider{
-    padding: 14px;
-}
-
-.title {
-    padding-bottom: 12px;
-    font-weight: 500;
-    font-size: 16px;
-    color: #202020;
-    border-bottom: 0.5px solid #EAEAEA;
-}
-
 .range{
     padding: 16px 0;
 }
-
 .form{
     display: flex;
     align-items: center;

@@ -13,8 +13,9 @@ const FilterBar = ({checked, chengeCheckbox}) => {
                 <Photo/>
                 <Switch label={'Только с фотографией'} checked={checked} chengeCheckbox={chengeCheckbox}/>
             </div>
-            <div>
-                <CheckboxSlider title={'Возраст'} label={'лет'} value1={18} value2={40} min={16} max={45}/>
+            <div className={s.box}>                
+                <h3 className={s.title}>Возраст</h3> 
+                <CheckboxSlider label={'лет'} value1={18} value2={40} min={16} max={45}/>
             </div>
             
 
