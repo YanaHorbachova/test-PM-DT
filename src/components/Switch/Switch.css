@@ -1,8 +1,9 @@
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    min-width: 252px;
+    align-items: center;    
+    width: 100%;
+    max-width: 335px;
 }
 .title{
     margin: 0;
@@ -72,7 +73,7 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        min-width: 268px;
-    }
-  
+        width: 100%;
+        max-width: 363px;
+    }  
   }

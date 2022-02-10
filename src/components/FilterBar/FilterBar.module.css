@@ -1,12 +1,9 @@
 .FilterBar {
+  margin: auto;
   width: 335px;
 }
 
-.FilterBar:not(:last-child) {
-  margin-bottom: 15px;
-}
-
-.title {
+.FilterBarTitle {
   margin: 0;
   margin-bottom: 15px;
   font-weight: 500;
@@ -16,16 +13,28 @@
 
 .photoFilter {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 16px 18px;
+  margin-bottom: 15px;
+}
+
+.studentFilter{
+  display: flex;
+  align-items: center;
+  margin-top: 31px;
+}
+
+.svg{
+  margin-right: 10px;
 }
 
 .box{
   padding: 14px;
+  margin-bottom: 15px;
 }
 
-.title {
+.title {  
+  margin: 0;
   padding-bottom: 12px;
   font-weight: 500;
   font-size: 16px;
@@ -36,11 +45,17 @@
 
 @media screen and (min-width: 768px) {
   .FilterBar {
-    min-width: 363px;  
+    min-width: 363px; 
+    margin: 0; 
   }
 
   .photoFilter {
     padding: 22px 24px;
+  }
+
+  .box{
+    padding: 20px;
+    margin-bottom: 15px;
   }
 
 }

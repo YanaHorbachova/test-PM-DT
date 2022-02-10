@@ -1,5 +1,5 @@
 .range{
-    padding: 16px 0;
+  margin-top: 28px;
 }
 .form{
     display: flex;
@@ -29,7 +29,6 @@
     .form{
         padding-right: 0;  
       }
-
 
     .input{
         width: 106px;

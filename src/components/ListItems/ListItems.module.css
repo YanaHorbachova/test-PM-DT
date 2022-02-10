@@ -1,0 +1,52 @@
+.listItems{
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.item input{
+    width: 19px;
+    height: 19px;
+    color: #202020;
+    border-color: #FBC53C;
+    border-radius: 2px;
+}
+
+.item input[type=checkbox] {
+    display: none;
+}
+
+.item input[type=checkbox] + label:before {
+    content: "\2714";
+    color: transparent;
+    display: inline-block;
+    margin: -5px 11px 0 0;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #FBC53C;
+    border-radius: 2px;
+    text-align: center;
+    transition: color ease .3s;
+    cursor: pointer;
+}
+
+.item input[type=checkbox]:checked + label:before {
+    background-color: #FBC53C ;
+    color: white;
+}
+
+.item label {
+    font-weight: 300;
+    font-size: 14px;
+    color: #555556;
+}
+
+.item span{
+    font-size: 14px;
+    color: #5B5B5B;
+}
