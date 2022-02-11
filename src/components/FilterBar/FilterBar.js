@@ -3,6 +3,9 @@ import CheckboxSlider from "../CheckboxSlider";
 import BtnGroupList from "../BtnGroupList";
 import ListItems from "../ListItems";
 import {experience, employmentType, Education} from "../ListItems/Items";
+import LanguageFilter from "../LanguageFilter";
+import {Language, englishLevel} from "../LanguageFilter/LanguageItems"
+
 
 import {ReactComponent as Photo} from '../../icon/photo-filter.svg'
 import {ReactComponent as Student} from '../../icon/students.svg'
@@ -41,6 +44,7 @@ const FilterBar = ({checked, chengeCheckbox}) => {
             </div>
             <div className={s.box}>                
                 <h3 className={s.title}>Владение языками</h3> 
+                <LanguageFilter items={Language} level={englishLevel}/>
             </div>
             <div className={s.box}>                
                 <h3 className={s.title}>Тип занятости</h3> 

@@ -1,0 +1,96 @@
+.listItems{
+    display: flex;
+    flex-direction: column;
+}
+
+.item,
+.level {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.level{
+    width: 291px;
+    margin-left: 16px;
+    margin-right: 30px;
+}
+
+.item input{
+    width: 19px;
+    height: 19px;
+    color: #202020;
+    border-color: #FBC53C;
+    border-radius: 2px;
+}
+
+.level input{
+    width: 16px;
+    height: 16px;
+    color: #202020;
+    border-color: #000046;
+    border-radius: 50%;
+
+}
+
+.item input[type=checkbox],
+.level input[type=checkbox]{
+    display: none;
+}
+
+.item input[type=checkbox] + span:before{
+    content: "\2714";
+    color: transparent;
+    display: inline-block;
+    margin: -5px 11px 0 0;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #FBC53C;
+    border-radius: 2px;
+    text-align: center;
+    transition: color ease .3s;
+    cursor: pointer;
+}
+
+.level input[type=checkbox] + label:before{
+    content: "\2714";
+    color: transparent;
+    display: inline-block;
+    margin: -5px 11px 0 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000046;
+    border-radius: 50%;
+    text-align: center;
+    transition: color ease .3s;
+    cursor: pointer;
+}
+
+.item input[type=checkbox]:checked + span:before{
+    background-color: #FBC53C ;
+    color: white;
+}
+
+.level input[type=checkbox]:checked + label:before{
+    background-color:#000046 ;
+}
+
+.item label,
+.level label {    
+    margin-left: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #555556;
+}
+
+.item .total,
+.level .total{
+    margin: 0;
+    margin-left: auto;
+    font-size: 14px;
+    color: #5B5B5B;
+}
+
+.flag{
+    margin: 0;
+}
