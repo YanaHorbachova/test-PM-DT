@@ -94,3 +94,11 @@
 .flag{
     margin: 0;
 }
+
+.item .arrow {
+    display: inline-block;
+    margin-left: 20px;
+    width: 11px;
+    height: 6px;
+    fill:  #000046;
+}

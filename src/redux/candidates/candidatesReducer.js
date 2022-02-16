@@ -6,7 +6,7 @@ import {
   getСandidatesError,
 } from "./candidates-actions";
 
-const candidates = createReducer([], {
+const candidates = createReducer([ ], {
   [getСandidatesSuccess]: (_, { payload }) => payload,  
 });
 

@@ -1,0 +1,235 @@
+.CardList{      
+    width: 335px;
+}
+
+.card{
+    position: relative;
+    margin-top: 30px;   
+    padding: 16px;    
+    width: 335px;
+    height: 253px;    
+    border: 1px solid #EAEAEA;
+}
+
+.photo{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+.infoHeder{  
+    margin-left: 85px;  
+    color: #202020;
+    margin-bottom: 20px;
+}
+
+.desiredposition{
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.name{
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+.city{
+    margin-top: 6px;
+    font-size: 13px;
+
+}
+.city::before{
+    margin-right: 10px;
+    content: url('../../icon/marker.svg');
+    fill: #000046;
+    display: inline-block;
+    width: 12px;
+    height: 18px;
+}
+
+.workexperience{
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.update{
+    margin-top: 24px;
+    font-size: 12px;
+    color: #ADADAD;
+}
+
+.On{
+    font-size: 12px;
+    color: green;
+}
+
+.Off{
+    font-size: 12px;
+    color: red;
+}
+
+.On::before,
+.Off::before {
+    content: " ";
+    display: inline-block;
+    margin-right: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: red;
+}
+.On::before {
+    background-color: green;
+}
+
+.infoFooter{
+    display: flex;
+    flex-direction: column-reverse;    
+    margin-top: 20px;
+}
+
+.cardButton{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 17px;
+    right: 10px;
+}
+
+.buttonFavorites,
+.buttonMenu {
+    width: 24px;
+    height: 22px;
+    background: #FFFFFF;
+    border: none;
+}
+
+.buttonFavorites{
+    margin-right: 15px;
+}
+
+.menu{
+    position: absolute;  
+    top: 30px;
+    right: 0;  
+    padding: 19px;
+    width: 174px;
+    height: 94px;
+    background-color: #fff;
+    border: 0.5px solid #EAEAEA;
+    border-radius: 8px;
+    z-index: 10;
+
+}
+
+.menuItem{
+    margin: 0;
+    font-size: 14px;
+    color: #1E1E1E;
+}
+
+.menuItem:not(:last-child){
+    margin-bottom: 12px;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .CardList{        
+        margin-right: 40px;
+        width: 838px;
+    }
+
+    .card{
+        display: flex;
+        align-items: center;        
+        margin-top: 40px;
+        padding: 20px;        
+        width: 838px;
+        height: 206px;
+    }
+
+    .photo{
+        position: relative;
+        width: 164px;
+        height: 164px;    
+    }
+
+    .info{
+        margin-left: 20px;
+    }
+
+    .infoHeder{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 18px;
+        width: 400px;        
+    }
+
+    .desiredposition{
+        margin: 0;
+        width: 400px;
+        font-weight: 500;
+        font-size: 24px;
+        color: #202020;
+    }
+
+    .name{
+        margin-top: 16px;
+        margin-right: 26px;
+    }
+
+    .city{
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .infoFooter{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .update{
+        margin-top: 0;
+        margin-right: 20px;
+        color: #A6A6A6;
+    }
+
+    .On,
+    .Off{
+        margin-top: 0;
+    }
+
+    .buttonFavorites,
+    .buttonMenu {
+        width: 46px;
+        height: 46px;
+        background: #FFFFFF;
+        border: 0.5px solid #EAEAEA;
+        border-radius: 8px;
+    }
+
+    .buttonFavorites{
+        margin-right: 20px;
+    }
+
+    .cardButton{
+        position: relative;
+        margin-left: auto;
+    }   
+
+    .menu{ 
+        top: 0;
+        right: 55px;  
+    
+    }
+}

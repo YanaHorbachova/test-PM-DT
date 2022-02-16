@@ -37,7 +37,7 @@ const SearchForm = () => {
                     name="town"
                     placeholder="Город"
                 />
-                <Marker className={s.icon}/>
+                <Marker className={s.iconMarker}/>
                 <button className={s.button} type="submit">
                   Найти кандидатов
                 </button>

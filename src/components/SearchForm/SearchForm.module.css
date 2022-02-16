@@ -27,11 +27,22 @@ input::placeholder {
     color:#ffffff;
 }
 
-.icon{
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-moz-placeholder  {
+    padding-left: 44px;
+}
+
+.icon,
+.iconMarker{
     position: absolute;
     top: 12.5%;
     left: 18px;
     height: 17px;
+    fill: #ffffff;
+}
+.iconMarker{
+    top: 4%;
 }
 
 .button{

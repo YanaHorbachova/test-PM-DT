@@ -47,6 +47,7 @@
   .FilterBar {
     min-width: 363px; 
     margin: 0; 
+    margin-top: 40px;
   }
 
   .photoFilter {

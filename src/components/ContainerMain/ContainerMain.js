@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch  } from 'react-redux';
 import  getСandidates  from '../../redux/candidates/candidates-operations';
-import { getTotalСandidates, getAllСandidates  } from "../../redux/candidates/candidates-selectors";
+import { getTotalСandidates } from "../../redux/candidates/candidates-selectors";
 
 import { Mobile, Desktop } from '../../utils/mediaQuery';
 import CardList from '../CardList';
@@ -18,20 +18,19 @@ const Main = () => {
   const [checked, setChecked] = useState(false);
   const {showModal, toggle} = useModal();
   const dispatch = useDispatch();
+   
+  const photo = (checked? `true` : null)
+  
+  useEffect(()=>{
+    dispatch(getСandidates(photo));    
+  },[dispatch,photo])   
 
   const totalСandidates = useSelector(getTotalСandidates);  
-  const Сandidates = useSelector(getAllСandidates);   
-
-  useEffect(()=>{
-      dispatch(getСandidates());
-    },[dispatch])    
-
 
   function chengeCheckbox() {
     setChecked(!checked);
   }
 
-  console.log(Сandidates)
   console.log(checked)
 
     return (
@@ -47,7 +46,7 @@ const Main = () => {
               <Arrow className={s.arrow}/>
             </div>
               <button className={s.button} type="button" onClick={toggle}><Menu/></button> 
-              {showModal && (<Modal toggle={toggle}><FilterBar/></Modal> )} 
+              {showModal && (<Modal toggle={toggle}><FilterBar checked={checked} chengeCheckbox={chengeCheckbox}/></Modal> )} 
           </div>     
           <CardList/>
         </Mobile>
@@ -56,10 +55,10 @@ const Main = () => {
           <p className={s.text}>Резюме продавец консультант во Всей Украине</p>
           <p className={s.period}>за все время</p> 
           <Arrow className={s.arrow}/>      
-
-          <CardList/>
-          <FilterBar checked={checked} chengeCheckbox={chengeCheckbox}/>
-
+          <div className={s.mainContainer}>
+            <CardList/>
+            <FilterBar checked={checked} chengeCheckbox={chengeCheckbox}/>
+          </div>
         </Desktop>
     
       </div>
