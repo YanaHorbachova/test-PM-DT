@@ -8,10 +8,8 @@ const LanguageFilter = ({items, level}) => {
     return (
         <form className={s.listItems}>
             <div className = {s.item}>
-                <input type="checkbox" name="text" id='1-1' checked/>
-                        <span> </span>
-                        <span className={s.flag}><English/></span>
-                        <label for='1-1'>Английский</label>                    
+                <input type="checkbox" name="text" id='1-1' checked/>                        
+                        <label for='1-1'> <span className={s.flag}><English/></span>Английский</label>                    
                         <p className={s.total}>603</p>
                         <ArrowUp className={s.arrow}/>
             </div>
@@ -28,9 +26,7 @@ const LanguageFilter = ({items, level}) => {
             {items.map(({text,flag,total,id}) => (
                 <div className = {s.item}>                   
                     <input type="checkbox" name="text" id={id}/>
-                    <span> </span>
-                    <span className={s.flag}>{flag}</span>
-                    <label for={id}>{text}</label>                    
+                    <label for={id}><span className={s.flag}>{flag}</span>{text}</label>                    
                     <p className={s.total}>{total}</p>
                     <Arrow className={s.arrow}/>
                 </div>

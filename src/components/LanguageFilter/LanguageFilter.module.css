@@ -38,7 +38,7 @@
     display: none;
 }
 
-.item input[type=checkbox] + span:before{
+.item input[type=checkbox] + label:before{
     content: "\2714";
     color: transparent;
     display: inline-block;
@@ -66,7 +66,7 @@
     cursor: pointer;
 }
 
-.item input[type=checkbox]:checked + span:before{
+.item input[type=checkbox]:checked + label:before{
     background-color: #FBC53C ;
     color: white;
 }
@@ -76,8 +76,9 @@
 }
 
 .item label,
-.level label {    
-    margin-left: 8px;
+.level label {
+    display: flex;
+    align-items: center;
     font-weight: 300;
     font-size: 14px;
     color: #555556;
@@ -92,7 +93,7 @@
 }
 
 .flag{
-    margin: 0;
+    margin-right: 8px;
 }
 
 .item .arrow {
