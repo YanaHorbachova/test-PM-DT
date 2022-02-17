@@ -75,8 +75,7 @@
     background-color:#000046 ;
 }
 
-.item label,
-.level label {
+.item label {
     display: flex;
     align-items: center;
     font-weight: 300;
@@ -90,6 +89,12 @@
     margin-left: auto;
     font-size: 14px;
     color: #5B5B5B;
+}
+
+.level label {
+    font-weight: 300;
+    font-size: 14px;
+    color: #555556;
 }
 
 .flag{

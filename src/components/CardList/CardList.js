@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { useSelector } from 'react-redux';
 import { getAllСandidates } from "../../redux/candidates/candidates-selectors";
 
@@ -8,22 +7,15 @@ import {ReactComponent as DotsMenu} from '../../icon/dots.svg'
 import s from "./CardList.module.css";
 
 const CardList = () => { 
-    const [isOpen, setIsOpen] = useState(false);
     const candidates = useSelector(getAllСandidates); 
 
-    function toggleMenu (e) {
-        console.log(e.target.id)
-            setIsOpen(!isOpen)        
-      }
-
-    console.log(candidates)
 
     return (        
         <div className={s.CardList}>
             {candidates !== undefined ?
                 <ul>         
                     {candidates.map(({id,desiredposition, first_name, work_city, workexperience, created_at, status}) => (
-                        <li className = {s.card} key={id} onClick={(e) => console.log(e)}> 
+                        <li className = {s.card} key={id} > 
                             <div className = {s.photo}>
                             </div>
                             <div className = {s.info}>
@@ -52,13 +44,7 @@ const CardList = () => {
                             </div>
                             <div className={s.cardButton}>
                                 <button type='button'className={s.buttonFavorites}><Heart/></button>
-                                <button type='button'className={s.buttonMenu} id={id} onClick={toggleMenu}><DotsMenu/></button>
-                                {isOpen?
-                                    <ul className={s.menu}>
-                                        <li className={s.menuItem}>Пожаловаться</li>
-                                        <li className={s.menuItem}>Скрыть кандидата</li>
-                                    </ul>
-                                    : null}
+                                <button type='button'className={s.buttonMenu}><DotsMenu/></button>
                             </div>
 
                         </li>
